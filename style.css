@@ -5,7 +5,7 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 } */
-
+/* //! Convert all your pixel to rem unit */
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +15,15 @@
   height: 100%;
   width: 100%;
   background-color: hsl(30, 38%, 92%);
+  /* !WHat is the purpose of this display grid */
   display: grid;
   place-items: center;
+  /* //! You didnt include this font family in your html or css file */
   font-family: "Montserrat", sans-serif;
   margin-top: 70px;
 }
 .card {
+  /* !Use max-width instead */
   width: 610px;
   display: flex;
 }
@@ -39,6 +42,8 @@
   justify-content: space-between;
   padding: 30px;
 }
+
+/* !Why do you have different selector for the card-content */
 .card-content h4 {
   letter-spacing: 2px;
   font-weight: 500;
@@ -66,6 +71,8 @@
   text-decoration: line-through;
   color: hsl(228, 12%, 48%);
 }
+
+/* //! Why do you have the button class selector in two different places */
 .button {
   background-color: hsl(158, 36%, 37%);
   display: flex;
